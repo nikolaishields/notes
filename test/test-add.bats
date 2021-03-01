@@ -18,7 +18,6 @@ notes="./notes"
   assert_output $'line1\nline2'
   
   run $notes add note.md "new message"
-  run $notes cat note.md
   assert_success
 
   assert_output $'line1\nline2\nnew message'
