@@ -270,6 +270,7 @@ Usage:
     $name mv <source> <dest>|<directory>  # Rename a note, or move a note when a directory is given
     $name rm [-r | --recursive] <name>    # Remove note, or folder if -r or --recursive is given
     $name cat <name>                      # Display note
+    $name cat <name>                      # Display note
     echo <name> | $name open|o            # Open all note filenames piped in
     echo <name> | $name cat               # Display all note filenames piped in
     $name --help                          # Print this usage information
