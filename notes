@@ -252,6 +252,8 @@ add_note() {
     exit 1
   fi
 
+  note_path=$( get_full_note_path "$note_path" )
+  echo "$message" >> "$note_path"
 }
 
 usage() {
