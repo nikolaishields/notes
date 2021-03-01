@@ -327,6 +327,9 @@ main() {
         "cat" )
             cmd="handle_multiple_notes cat"
             ;;
+        "cat" )
+            cmd="handle_multiple_notes cat"
+            ;;
         --help | -help | -h )
             cmd="usage"
             ;;
