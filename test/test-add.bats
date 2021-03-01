@@ -16,6 +16,7 @@ notes="./notes"
   echo line1 >> "$NOTES_DIRECTORY/note.md"
   echo line2 >> "$NOTES_DIRECTORY/note.md"
   run $notes add note.md "new message"
+  run $notes cat note.md
 
   assert_success
   assert_output $'line1\nline2\nnew message'
