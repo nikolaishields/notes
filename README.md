@@ -136,9 +136,9 @@ Removes the given note if it exists. If `-r` or `--recursive` is given, deletes 
 
 Displays the note
 
-### `notes cat <note-name>`
+### `notes add <note-name> "message"`
 
-Displays the note
+Adds message to note
 
 ### `notes grep/find <pattern> | notes open`
 
