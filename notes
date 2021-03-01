@@ -240,6 +240,14 @@ cat_note() {
 }
 
 add_note() {
+  local note_path=$1
+  local message=$2
+
+  if [[ -z "$note_path" ]]; then 
+    printf "Add requires a name, but none was provided.\n"
+    exit 1
+  fi
+
 }
 
 usage() {
