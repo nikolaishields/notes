@@ -13,14 +13,14 @@ teardown() {
 notes="./notes"
 
 @test "Should show new lines added" {
-  echo line1 >> "$NOTES_DIRECTORY/note.md"
-  echo line2 >> "$NOTES_DIRECTORY/note.md"
+  echo 'line1' >> "$NOTES_DIRECTORY/note.md"
+  echo 'line2' >> "$NOTES_DIRECTORY/note.md"
   assert_output $'line1\nline2'
 
-  run $notes add note.md "new message"
+  run $notes add note.md "line3"
   assert_success
 
   run $notes cat note.md
-  assert_output $'line1\nline2\nnew message'
+  assert_output $'line1\nline2\nline3'
 }
 
