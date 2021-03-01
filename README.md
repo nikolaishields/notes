@@ -136,6 +136,10 @@ Removes the given note if it exists. If `-r` or `--recursive` is given, deletes 
 
 Displays the note
 
+### `notes cat <note-name>`
+
+Displays the note
+
 ### `notes grep/find <pattern> | notes open`
 
 Combine these together! This opens each matching note in your `$EDITOR` in turn.
