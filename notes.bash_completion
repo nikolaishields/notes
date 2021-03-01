@@ -48,7 +48,7 @@ _notes()
             cat|c)
                 _notes_complete_notes "$cur"
                 ;;
-            cat|c)
+            add|a)
                 _notes_complete_notes "$cur"
                 ;;
             ls)
