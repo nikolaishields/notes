@@ -20,6 +20,7 @@ notes="./notes"
   run $notes add note.md "new message"
   assert_success
 
+  run $notes cat note.md
   assert_output $'line1\nline2\nnew message'
 }
 
