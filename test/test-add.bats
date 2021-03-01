@@ -15,10 +15,13 @@ notes="./notes"
 @test "Should show new lines added" {
   echo line1 >> "$NOTES_DIRECTORY/note.md"
   echo line2 >> "$NOTES_DIRECTORY/note.md"
+  assert_output $'line1\nline2'
+  
   run $notes add note.md "new message"
   run $notes cat note.md
-
   assert_success
+
+  git submodule update --init --recursive
   assert_output $'line1\nline2\nnew message'
 }
 
