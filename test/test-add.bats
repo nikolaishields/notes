@@ -21,7 +21,6 @@ notes="./notes"
   run $notes cat note.md
   assert_success
 
-  git submodule update --init --recursive
   assert_output $'line1\nline2\nnew message'
 }
 
