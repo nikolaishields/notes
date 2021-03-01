@@ -1,4 +1,3 @@
-
 #!./test/libs/bats/bin/bats
 
 load 'helpers'
