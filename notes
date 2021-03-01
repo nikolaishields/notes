@@ -239,6 +239,9 @@ cat_note() {
     cat "$note_path"
 }
 
+add_note() {
+}
+
 usage() {
   local name=$(basename $0)
 	cat <<EOF
