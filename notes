@@ -247,6 +247,10 @@ add_note() {
     printf "Add requires a name, but none was provided.\n"
     exit 1
   fi
+  if [[ -z "$note_path" ]]; then 
+    printf "Add requires a name, but none was provided.\n"
+    exit 1
+  fi
 
 }
 
